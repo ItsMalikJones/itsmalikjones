@@ -1,0 +1,181 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-CNJr7vvv.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/GeneralSans-Bold.ttf": {
+    "file": "assets/GeneralSans-Bold-DM1NF1hz.ttf",
+    "src": "resources/fonts/GeneralSans-Bold.ttf"
+  },
+  "resources/fonts/GeneralSans-Bold.woff": {
+    "file": "assets/GeneralSans-Bold-Bd_PtqWW.woff",
+    "src": "resources/fonts/GeneralSans-Bold.woff"
+  },
+  "resources/fonts/GeneralSans-Bold.woff2": {
+    "file": "assets/GeneralSans-Bold-Ctx684HN.woff2",
+    "src": "resources/fonts/GeneralSans-Bold.woff2"
+  },
+  "resources/fonts/GeneralSans-BoldItalic.ttf": {
+    "file": "assets/GeneralSans-BoldItalic-U4augfB3.ttf",
+    "src": "resources/fonts/GeneralSans-BoldItalic.ttf"
+  },
+  "resources/fonts/GeneralSans-BoldItalic.woff": {
+    "file": "assets/GeneralSans-BoldItalic-42Tn_Ge_.woff",
+    "src": "resources/fonts/GeneralSans-BoldItalic.woff"
+  },
+  "resources/fonts/GeneralSans-BoldItalic.woff2": {
+    "file": "assets/GeneralSans-BoldItalic-CPXXYtWC.woff2",
+    "src": "resources/fonts/GeneralSans-BoldItalic.woff2"
+  },
+  "resources/fonts/GeneralSans-Extralight.ttf": {
+    "file": "assets/GeneralSans-Extralight--toNElvl.ttf",
+    "src": "resources/fonts/GeneralSans-Extralight.ttf"
+  },
+  "resources/fonts/GeneralSans-Extralight.woff": {
+    "file": "assets/GeneralSans-Extralight-NwzqzUvZ.woff",
+    "src": "resources/fonts/GeneralSans-Extralight.woff"
+  },
+  "resources/fonts/GeneralSans-Extralight.woff2": {
+    "file": "assets/GeneralSans-Extralight-CeoahQd2.woff2",
+    "src": "resources/fonts/GeneralSans-Extralight.woff2"
+  },
+  "resources/fonts/GeneralSans-ExtralightItalic.ttf": {
+    "file": "assets/GeneralSans-ExtralightItalic-Cb4GrHRn.ttf",
+    "src": "resources/fonts/GeneralSans-ExtralightItalic.ttf"
+  },
+  "resources/fonts/GeneralSans-ExtralightItalic.woff": {
+    "file": "assets/GeneralSans-ExtralightItalic-DSYFpNEt.woff",
+    "src": "resources/fonts/GeneralSans-ExtralightItalic.woff"
+  },
+  "resources/fonts/GeneralSans-ExtralightItalic.woff2": {
+    "file": "assets/GeneralSans-ExtralightItalic-S_cjHVs3.woff2",
+    "src": "resources/fonts/GeneralSans-ExtralightItalic.woff2"
+  },
+  "resources/fonts/GeneralSans-Italic.ttf": {
+    "file": "assets/GeneralSans-Italic-BpGxTCEl.ttf",
+    "src": "resources/fonts/GeneralSans-Italic.ttf"
+  },
+  "resources/fonts/GeneralSans-Italic.woff": {
+    "file": "assets/GeneralSans-Italic-DzbrtvFL.woff",
+    "src": "resources/fonts/GeneralSans-Italic.woff"
+  },
+  "resources/fonts/GeneralSans-Italic.woff2": {
+    "file": "assets/GeneralSans-Italic-B5PwseXg.woff2",
+    "src": "resources/fonts/GeneralSans-Italic.woff2"
+  },
+  "resources/fonts/GeneralSans-Light.ttf": {
+    "file": "assets/GeneralSans-Light-DcTqM57O.ttf",
+    "src": "resources/fonts/GeneralSans-Light.ttf"
+  },
+  "resources/fonts/GeneralSans-Light.woff": {
+    "file": "assets/GeneralSans-Light-DzM6pIPN.woff",
+    "src": "resources/fonts/GeneralSans-Light.woff"
+  },
+  "resources/fonts/GeneralSans-Light.woff2": {
+    "file": "assets/GeneralSans-Light-ulp9itO8.woff2",
+    "src": "resources/fonts/GeneralSans-Light.woff2"
+  },
+  "resources/fonts/GeneralSans-LightItalic.ttf": {
+    "file": "assets/GeneralSans-LightItalic-C_QR9gvT.ttf",
+    "src": "resources/fonts/GeneralSans-LightItalic.ttf"
+  },
+  "resources/fonts/GeneralSans-LightItalic.woff": {
+    "file": "assets/GeneralSans-LightItalic-Ct_DMRPZ.woff",
+    "src": "resources/fonts/GeneralSans-LightItalic.woff"
+  },
+  "resources/fonts/GeneralSans-LightItalic.woff2": {
+    "file": "assets/GeneralSans-LightItalic-DkwLWVcP.woff2",
+    "src": "resources/fonts/GeneralSans-LightItalic.woff2"
+  },
+  "resources/fonts/GeneralSans-Medium.ttf": {
+    "file": "assets/GeneralSans-Medium-BakGtJF2.ttf",
+    "src": "resources/fonts/GeneralSans-Medium.ttf"
+  },
+  "resources/fonts/GeneralSans-Medium.woff": {
+    "file": "assets/GeneralSans-Medium-sA7I9gJL.woff",
+    "src": "resources/fonts/GeneralSans-Medium.woff"
+  },
+  "resources/fonts/GeneralSans-Medium.woff2": {
+    "file": "assets/GeneralSans-Medium-DvEF04Ne.woff2",
+    "src": "resources/fonts/GeneralSans-Medium.woff2"
+  },
+  "resources/fonts/GeneralSans-MediumItalic.ttf": {
+    "file": "assets/GeneralSans-MediumItalic-DoLfBPNa.ttf",
+    "src": "resources/fonts/GeneralSans-MediumItalic.ttf"
+  },
+  "resources/fonts/GeneralSans-MediumItalic.woff": {
+    "file": "assets/GeneralSans-MediumItalic-BBXQStTM.woff",
+    "src": "resources/fonts/GeneralSans-MediumItalic.woff"
+  },
+  "resources/fonts/GeneralSans-MediumItalic.woff2": {
+    "file": "assets/GeneralSans-MediumItalic-KKwIU56p.woff2",
+    "src": "resources/fonts/GeneralSans-MediumItalic.woff2"
+  },
+  "resources/fonts/GeneralSans-Regular.ttf": {
+    "file": "assets/GeneralSans-Regular-BTmkhiIl.ttf",
+    "src": "resources/fonts/GeneralSans-Regular.ttf"
+  },
+  "resources/fonts/GeneralSans-Regular.woff": {
+    "file": "assets/GeneralSans-Regular-Dk2lLWJL.woff",
+    "src": "resources/fonts/GeneralSans-Regular.woff"
+  },
+  "resources/fonts/GeneralSans-Regular.woff2": {
+    "file": "assets/GeneralSans-Regular-BeAhF2WT.woff2",
+    "src": "resources/fonts/GeneralSans-Regular.woff2"
+  },
+  "resources/fonts/GeneralSans-Semibold.ttf": {
+    "file": "assets/GeneralSans-Semibold-Ckm6wkEi.ttf",
+    "src": "resources/fonts/GeneralSans-Semibold.ttf"
+  },
+  "resources/fonts/GeneralSans-Semibold.woff": {
+    "file": "assets/GeneralSans-Semibold-oVEy_BBm.woff",
+    "src": "resources/fonts/GeneralSans-Semibold.woff"
+  },
+  "resources/fonts/GeneralSans-Semibold.woff2": {
+    "file": "assets/GeneralSans-Semibold-DFLbTJgb.woff2",
+    "src": "resources/fonts/GeneralSans-Semibold.woff2"
+  },
+  "resources/fonts/GeneralSans-SemiboldItalic.ttf": {
+    "file": "assets/GeneralSans-SemiboldItalic-QA1tcZBS.ttf",
+    "src": "resources/fonts/GeneralSans-SemiboldItalic.ttf"
+  },
+  "resources/fonts/GeneralSans-SemiboldItalic.woff": {
+    "file": "assets/GeneralSans-SemiboldItalic-DNy4mdcJ.woff",
+    "src": "resources/fonts/GeneralSans-SemiboldItalic.woff"
+  },
+  "resources/fonts/GeneralSans-SemiboldItalic.woff2": {
+    "file": "assets/GeneralSans-SemiboldItalic-C5XnX2aR.woff2",
+    "src": "resources/fonts/GeneralSans-SemiboldItalic.woff2"
+  },
+  "resources/fonts/GeneralSans-Variable.ttf": {
+    "file": "assets/GeneralSans-Variable-D4t1btYN.ttf",
+    "src": "resources/fonts/GeneralSans-Variable.ttf"
+  },
+  "resources/fonts/GeneralSans-Variable.woff": {
+    "file": "assets/GeneralSans-Variable-DAqniUaj.woff",
+    "src": "resources/fonts/GeneralSans-Variable.woff"
+  },
+  "resources/fonts/GeneralSans-Variable.woff2": {
+    "file": "assets/GeneralSans-Variable-p1VyP7gg.woff2",
+    "src": "resources/fonts/GeneralSans-Variable.woff2"
+  },
+  "resources/fonts/GeneralSans-VariableItalic.ttf": {
+    "file": "assets/GeneralSans-VariableItalic-dXS85WKy.ttf",
+    "src": "resources/fonts/GeneralSans-VariableItalic.ttf"
+  },
+  "resources/fonts/GeneralSans-VariableItalic.woff": {
+    "file": "assets/GeneralSans-VariableItalic-BsSpAJeQ.woff",
+    "src": "resources/fonts/GeneralSans-VariableItalic.woff"
+  },
+  "resources/fonts/GeneralSans-VariableItalic.woff2": {
+    "file": "assets/GeneralSans-VariableItalic-DIM2rvVg.woff2",
+    "src": "resources/fonts/GeneralSans-VariableItalic.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-D2jpX1vH.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
