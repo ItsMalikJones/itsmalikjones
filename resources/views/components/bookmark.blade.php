@@ -5,14 +5,13 @@
     'publisher' => 'birdboar',
     'publisherColor' => null,
     'spineLogo' => null,
-    'borderColor' => null,
     'spineFlareBottom' => null,
     'hoverSound' => null,
     'sound' => null,
     'content' => null
 ])
 <div>
-    <div :class="selectedProject == @js($key) ? 'h-[869px]' : 'hover:h-[200px] h-[166px]' " x-on:mouseover="@if($hoverSound)sounds.{{$hoverSound}}.played.length <= 0 ? sounds.{{$hoverSound}}?.play() : '' @endif" x-on:click="selectedProject = @js($key); @if($sound)sounds.{{$sound}}.played.length <= 0 ? sounds.{{$sound}}?.play() : '' @endif" class="bg-{{$bgColor}} text-white group flex justify-between items-center cursor-pointer select-none transition-all duration-500 transform-gpu overflow-hidden relative {{ $borderColor ? 'border-x-8 border-'.$borderColor : ''}}" style="{{$attributes->get('style')}}">
+    <div :class="selectedProject == @js($key) ? 'h-[869px]' : 'hover:h-[200px] h-[166px]' " x-on:mouseover="@if($hoverSound)sounds.{{$hoverSound}}.played.length <= 0 ? sounds.{{$hoverSound}}?.play() : '' @endif" x-on:click="selectedProject = @js($key); @if($sound)sounds.{{$sound}}.played.length <= 0 ? sounds.{{$sound}}?.play() : '' @endif" {{$attributes->merge(['class' => 'text-white group flex justify-between items-center cursor-pointer select-none transition-all duration-500 transform-gpu overflow-hidden relative'])}} style="{{$attributes->get('style')}}">
         <div :class="selectedProject == @js($key) ? 'opacity-0' : 'opacity-100' " class="flex justify-center items-center duration-300">
             <div class="-rotate-90 {{$spineLogo->attributes->get('class')}}">
                 {{$spineLogo}}
@@ -64,7 +63,7 @@
             @endif
         </div>
     </div>
-    <div :class="selectedProject == @js($key) ? 'h-[869px]' : 'h-0'" class="overflow-hidden transition-all delay-700">
+    <div :class="selectedProject == @js($key) ? 'min-h-[869px]' : 'h-0'" class="overflow-hidden transition-all delay-700">
         {{$content}}
     </div>
 </div>

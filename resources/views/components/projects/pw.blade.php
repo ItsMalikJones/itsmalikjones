@@ -1,4 +1,4 @@
-<x-bookmark key="PW" bgColor="commonwealth-navy" sound="pinwheel" hoverSound="pinwheelEmote" publisher="fcps" style="background-image: url({{url('/images/pinwheelpattern.svg')}}); background-repeat: no-repeat; background-size: contain; background-position: center; ">
+<x-bookmark key="PW" class="bg-commonwealth-navy md:bg-[url('/images/pinwheelpattern.svg')] bg-no-repeat bg-contain bg-center" sound="pinwheel" hoverSound="pinwheelEmote" publisher="fcps">
     <x-slot:spineLogo class="ml-7">
         <svg style="width:clamp(70px, 6vw, 6vw);" class="animate-spin-persist" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_80_343" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="46" y="18" width="41" height="42">
@@ -28,4 +28,41 @@
         </svg>
     </x-slot:spineLogo>
     Pinwheel
+    <x-slot:content>
+        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="pl-12 relative flex flex-col justify-center bg-no-repeat min-h-[869px]">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-5xl">
+                    <div class="space-y-4 flex flex-col items-center text-center">
+                        <div class="space-y-5">
+                            <h1 class="font-bold italic text-8xl">Eliminate the Bottleneck</h1>
+                            <h2 class="font-medium text-3xl">Simplifying Complex Approvals with Precision and Ease</h2>
+                        </div>
+                        <p class="text-xl leading-relaxed max-w-screen-md">
+                            Pinwheel is an innovative Personnel and Budget Request application designed to streamline complex approval processes, enhancing efficiency and decision-making within organizations. It empowers department heads and chiefs with a dual designation system, enabling them to assign roles as either submitters or approvers, thus optimizing workflow and ensuring accountability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{-- <div class="grid grid-cols-12 gap-4 place">
+                <div class="col-span-3 relative">
+                    <div class="bg-commonwealth-navy text-white p-3 rounded-lg">
+                        <h1 class="font-bold text-5xl italic">Hello World</h1>
+                        <p>
+                            Lorem ipsum dolor set amed
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-3">Hi</div>
+                <div class="col-span-3">Hi</div>
+                <div class="col-span-3">Hi</div>
+            </div> --}}
+        </div>
+        {{-- <div class="min-h-[869px]">
+            <div class="max-w-[90rem] bg-bluehorse mx-auto rounded-md">
+                <div class="bg-[url('/images/riders-4.jpg')] bg-cover">
+                    Hi
+                </div>
+            </div>
+        </div> --}}
+    </x-slot:content>
 </x-bookmark>

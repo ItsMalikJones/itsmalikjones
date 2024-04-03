@@ -2,12 +2,12 @@
     <div class="col-span-4 hidden md:block items-center h-full">
         <div class="flex gap-5 items-center">
             <x-nav-link :href="route('home')" :active="true">Home</x-nav-link>
-            <x-nav-link href="#">About</x-nav-link>
-            <x-nav-link href="#">Projects</x-nav-link>
-            <x-nav-link href="#">Talks</x-nav-link>
+            <x-nav-link href="#" x-on:click="selectedProject = null">About</x-nav-link>
+            <x-nav-link href="#" x-on:click="selectedProject = 'BHE'">Projects</x-nav-link>
+            {{-- <x-nav-link href="#">Talks</x-nav-link>
             <x-nav-link href="#">Uses</x-nav-link>
             <x-nav-link href="#">Now</x-nav-link>
-            <x-nav-link href="#">Contact</x-nav-link>
+            <x-nav-link href="#">Contact</x-nav-link> --}}
         </div>
     </div>
     <a href="{{route('home')}}" class="text-aqua text-3xl col-span-4 content-center font-semibold text-center tracking-[-0.14rem]">

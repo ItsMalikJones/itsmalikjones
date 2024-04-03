@@ -1,4 +1,4 @@
-<x-bookmark key="RP" bgColor="aqua">
+<x-bookmark key="RP" class="bg-aqua">
     <x-slot:spineLogo class="ml-7">
         <svg width="111" height="215" viewBox="0 0 111 215" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M111 0L111 215L55.5 184.447L-9.39795e-06 215L0 -4.85196e-06L111 0Z" fill="white"/>
