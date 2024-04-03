@@ -15,10 +15,10 @@
     </a>
     <div class="col-span-4 hidden md:block justify-self-end items-center h-full">
         <div class="flex gap-5 items-center text-white ">
-            <x-nav-link href="#" icon="github"/>
-            <x-nav-link href="#" icon="twitter"/>
-            <x-nav-link href="#" icon="instagram"/>
-            <x-nav-link href="#" icon="linkedin"/>
+            <x-nav-link href="https://github.com/ItsMalikJones/itsmalikjones" icon="github"/>
+            <x-nav-link href="https://twitter.com/ItsMalikJones" icon="twitter"/>
+            <x-nav-link href="https://instagram.com/ItsMalikJones" icon="instagram"/>
+            <x-nav-link href="https://www.linkedin.com/in/itsmalikjones" icon="linkedin"/>
         </div>
     </div>
 </div>
