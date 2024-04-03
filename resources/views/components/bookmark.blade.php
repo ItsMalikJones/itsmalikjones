@@ -11,21 +11,18 @@
     'content' => null
 ])
 <div>
-    <div :class="selectedProject == @js($key) ? 'h-[869px]' : 'hover:h-[200px] h-[166px]' " x-on:mouseover="@if($hoverSound)sounds.{{$hoverSound}}.played.length <= 0 ? sounds.{{$hoverSound}}?.play() : '' @endif" x-on:click="selectedProject = @js($key); @if($sound)sounds.{{$sound}}.played.length <= 0 ? sounds.{{$sound}}?.play() : '' @endif" {{$attributes->merge(['class' => 'text-white group flex justify-between items-center cursor-pointer select-none transition-all duration-500 transform-gpu overflow-hidden relative'])}} style="{{$attributes->get('style')}}">
-        <div :class="selectedProject == @js($key) ? 'opacity-0' : 'opacity-100' " class="flex justify-center items-center duration-300">
+    <div :class="selectedProject == @js($key) ? '' : 'hover:h-[200px] h-[166px] pt-20' " x-on:mouseover="@if($hoverSound)sounds.{{$hoverSound}}.played.length <= 0 ? sounds.{{$hoverSound}}?.play() : '' @endif" x-on:click="selectedProject = @js($key); @if($sound)sounds.{{$sound}}.played.length <= 0 ? sounds.{{$sound}}?.play() : '' @endif" {{$attributes->merge(['class' => 'text-white group flex justify-between items-center cursor-pointer select-none transition-all duration-500 transform-gpu overflow-hidden relative pb-20'])}} style="{{$attributes->get('style')}}">
+        <div :class="selectedProject == @js($key) ? 'hidden' : 'opacity-100' " class="flex justify-center items-center duration-700">
             <div class="-rotate-90 {{$spineLogo->attributes->get('class')}}">
                 {{$spineLogo}}
             </div>
         </div>
-        <div class="text-2xl sm:text-4xl md:text-[4.7vw] uppercase font-bold italic flex flex-col justify-center">
-            <div x-show="selectedProject == @js($key)" x-transition.enter.delay.300ms class="mx-auto h-full">
-                <div class="-translate-y-20">
-                    {{$projectMainLogo}}
-                </div>
+        <div class="uppercase font-bold italic flex flex-col justify-center flex-1 items-center">
+            {{--    --}}
+            <div class="size-[20vw] grid place-items-center" x-show="selectedProject == @js($key)" x-transition.enter.delay.300ms>
+                {{$projectMainLogo}}
             </div>
-            <div class="relative pr-7 md:pr-0">
-                {{$slot}}
-            </div>
+            <div class="text-2xl sm:text-4xl md:text-[4.7vw] !leading-none">{{$slot}}</div>
         </div>
         <div :class="selectedProject == @js($key) ? 'opacity-0' : 'opacity-100' " class="hidden md:block duration-300 {{$publisherColor}}">
             @if($publisher == 'birdboar')

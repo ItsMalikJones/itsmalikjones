@@ -5,9 +5,7 @@
         </svg>
     </x-slot:spineLogo>
     <x-slot:projectMainLogo>
-        <svg width="279" height="287" viewBox="0 0 279 287" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 198.814C0 198.814 5.06332 189.709 7.1244 175.793C9.17606 161.877 17.1992 83.4694 68.1803 42.5888C128.069 -5.43394 187.374 20.5776 188.49 21.4645C191.393 12.6194 228.746 -5.21222 221.424 1.46284C214.117 8.13791 225.071 16.6905 213.425 28.9368C213.049 29.4085 224.761 46.5986 232.619 51.4055C240.454 56.2078 248.666 63.8452 248.666 63.8452C248.666 63.8452 248.077 71.9591 249.089 74.5631C250.101 77.1623 251.296 87.9132 249.729 89.6681C248.162 91.3899 257.564 116.543 258.43 120.713C259.3 124.86 262.467 148.361 266.048 158.56C269.639 168.769 277.897 184.279 278.782 186.553C279.662 188.827 277.572 193.025 277.949 193.993C278.33 194.974 275.582 211.017 275.582 211.017C275.582 211.017 274.274 222.018 259.404 227.056C244.562 232.113 237.118 228.292 236.483 226.66C235.857 225.037 229.048 223.948 225.801 220.353C222.535 216.763 219.843 206.951 221.787 206.192C223.744 205.427 208.686 177.251 206.23 174.816C203.792 172.392 174.312 173.425 162.547 151.791C150.783 130.181 151.179 134.139 151.179 134.139C151.179 134.139 136.238 143.724 138.299 167.273C140.337 190.799 171.992 287 171.992 287L90.2544 286.962C83.403 210.456 0 198.814 0 198.814Z" fill="white"/>
-        </svg>
+        <img src="/images/bhehorse.svg"/>
     </x-slot:projectMainLogo>
     Blue Horse Entries
     <x-slot:spineFlareBottom>
@@ -32,7 +30,7 @@
         </svg>
     </x-slot:spineFlareBottom>
     <x-slot:content>
-        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="pl-12 relative flex flex-col justify-center bg-no-repeat min-h-[869px] bg-right-top bg-[url('https://www.itsmalikjones.no/images/bhemain.png')]">
+        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="pl-12 relative flex flex-col justify-center bg-no-repeat min-h-[869px] bg-right-top bg-[url('/images/bhemain.png')]">
             <div class="space-y-4">
                 <div>
                     <h1 class="font-bold italic text-[6vw] text-bluehorse">Discover & Ride</h1>
