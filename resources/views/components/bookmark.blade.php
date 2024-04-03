@@ -13,22 +13,22 @@
 ])
 <div>
     <div :class="selectedProject == @js($key) ? 'h-[869px]' : 'hover:h-[200px] h-[166px]' " x-on:mouseover="@if($hoverSound)sounds.{{$hoverSound}}.played.length <= 0 ? sounds.{{$hoverSound}}?.play() : '' @endif" x-on:click="selectedProject = @js($key); @if($sound)sounds.{{$sound}}.played.length <= 0 ? sounds.{{$sound}}?.play() : '' @endif" class="bg-{{$bgColor}} text-white group flex justify-between items-center cursor-pointer select-none transition-all duration-500 transform-gpu overflow-hidden relative {{ $borderColor ? 'border-x-8 border-'.$borderColor : ''}}" style="{{$attributes->get('style')}}">
-        <div :class="selectedProject == @js($key) ? 'opacity-0' : 'opacity-100' " class="w-[189px] flex justify-center items-center duration-300">
+        <div :class="selectedProject == @js($key) ? 'opacity-0' : 'opacity-100' " class="flex justify-center items-center duration-300">
             <div class="-rotate-90 {{$spineLogo->attributes->get('class')}}">
                 {{$spineLogo}}
             </div>
         </div>
-        <div class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl uppercase font-bold italic flex flex-col justify-center">
+        <div class="text-2xl sm:text-4xl md:text-[4.7vw] uppercase font-bold italic flex flex-col justify-center">
             <div x-show="selectedProject == @js($key)" x-transition.enter.delay.300ms class="mx-auto h-full">
                 <div class="-translate-y-20">
                     {{$projectMainLogo}}
                 </div>
             </div>
-            <div class="relative">
+            <div class="relative pr-7 md:pr-0">
                 {{$slot}}
             </div>
         </div>
-        <div :class="selectedProject == @js($key) ? 'opacity-0' : 'opacity-100' " class="duration-300 {{$publisherColor}}">
+        <div :class="selectedProject == @js($key) ? 'opacity-0' : 'opacity-100' " class="hidden md:block duration-300 {{$publisherColor}}">
             @if($publisher == 'birdboar')
                 <div class="flex items-center justify-center">
                     <div class="h-[62px] w-[86px] flex items-center justify-center pr-10">
