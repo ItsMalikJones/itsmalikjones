@@ -1,4 +1,4 @@
-<x-bookmark key="PW" class="bg-commonwealth-navy md:bg-[url('/images/pinwheelpattern.svg')] bg-no-repeat bg-contain bg-center" sound="pinwheel" hoverSound="pinwheelEmote" publisher="fcps">
+<x-bookmark key="PW" class="bg-[#CED6EB] md:bg-[url('/images/pinwheelpattern.svg')] bg-no-repeat bg-contain bg-center" sound="pinwheel" hoverSound="pinwheelEmote" publisher="fcps">
     <x-slot:spineLogo class="ml-7">
         <svg style="width:clamp(70px, 6vw, 6vw);" class="animate-spin-persist" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_80_343" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="46" y="18" width="41" height="42">
@@ -29,18 +29,16 @@
     </x-slot:spineLogo>
     Pinwheel
     <x-slot:content>
-        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="pl-12 relative flex flex-col justify-center bg-no-repeat min-h-[869px]">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="mx-auto max-w-5xl">
-                    <div class="space-y-4 flex flex-col items-center text-center">
-                        <div class="space-y-5">
-                            <h1 class="font-bold italic text-8xl">Eliminate the Bottleneck</h1>
-                            <h2 class="font-medium text-3xl">Simplifying Complex Approvals with Precision and Ease</h2>
-                        </div>
-                        <p class="text-xl leading-relaxed max-w-screen-md">
-                            Pinwheel is an innovative Personnel and Budget Request application designed to streamline complex approval processes, enhancing efficiency and decision-making within organizations. It empowers department heads and chiefs with a dual designation system, enabling them to assign roles as either submitters or approvers, thus optimizing workflow and ensuring accountability.
-                        </p>
+        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="text-white pl-12 relative flex flex-col pt-16 bg-no-repeat min-h-[869px] bg-commonwealth-navy bg-origin-padding bg-left-bottom lg:bg-bottom bg-[length:150vw] lg:bg-[length:78vw] bg-[url('/images/pinwheelshot.svg')]">
+            <div class="mx-auto max-w-7xl px-4 lg:px-8">
+                <div class="space-y-4 flex flex-col lg:items-center text-left lg:text-center pr-12">
+                    <div class="space-y-5">
+                        <h1 class="font-bold italic text-3xl lg:text-[4.9vw] leading-none">Approve & Progress</h1>
+                        <h2 class="font-medium text-2xl lg:text-3xl">Navigating the Landscape of Efficient Workflow Approvals</h2>
                     </div>
+                    <p class="sm:text-lg md:text-xl leading-relaxed max-w-screen-md">
+                        Pinwheel is an innovative Personnel and Budget Request application designed to streamline complex approval processes, enhancing efficiency and decision-making within organizations. It empowers department heads and chiefs with a dual designation system, enabling them to assign roles as either submitters or approvers, thus optimizing workflow and ensuring accountability.
+                    </p>
                 </div>
             </div>
             {{-- <div class="grid grid-cols-12 gap-4 place">
