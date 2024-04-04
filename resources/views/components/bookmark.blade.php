@@ -18,7 +18,6 @@
             </div>
         </div>
         <div class="uppercase font-bold italic flex flex-col justify-center flex-1 items-center">
-            {{--    --}}
             <div class="size-[20vw] grid place-items-center" x-show="selectedProject == @js($key)" x-transition.enter.delay.300ms>
                 {{$projectMainLogo}}
             </div>

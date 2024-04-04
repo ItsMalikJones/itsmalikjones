@@ -24,4 +24,17 @@
         <div>Race Passport</div>
         <img x-show="selectedProject != 'RP'" class="absolute -right-56 -top-3 hidden xl:block" src="{{url('/images/epm.png')}}"/>
     </div>
+    <x-slot:content>
+        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="pl-12 relative flex flex-col justify-center bg-no-repeat min-h-[869px]">
+            <div class="space-y-4">
+                <div>
+                    <h1 class="font-bold italic text-[6vw] text-bluehorse">Live. Venture. Explore.</h1>
+                    <h2 class="font-medium text-[2vw] -mt-6">Navigating the Path to Foot Races Worldwide</h2>
+                </div>
+                <p class="text-[1vw] leading-relaxed w-[35vw]">
+                    A dynamic discovery and registration platform tailored for foot races. Event organizers can effortlessly create and publicize their own events, while runners or their supporters navigate through an intuitive online entry process. This platform simplifies registration, fee payment, and participant management, offering a seamless experience from start to finish line.
+                </p>
+            </div>
+        </div>
+    </x-slot:content>
 </x-bookmark>
