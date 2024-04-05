@@ -19,15 +19,15 @@
 
         @vite('resources/css/app.css')
     </head>
-    <body x-data="{selectedProject: null, colors: { bgColor: 'bg-commonwealth-navy', textColor: 'text-white', accentColor: 'aqua'}, sounds: {}}" x-init="() => {
+    <body x-data="{selectedProject: 'BHE', colors: { bgColor: 'bg-commonwealth-navy', textColor: 'text-white', accentColor: 'aqua'}, sounds: {}}" x-init="() => {
         sounds['faceid'] = new Audio(@js(url('/audio/face_id_ding.mp3')));
         sounds['pinwheel'] = new Audio(@js(url('/audio/pinwheel.m4a')));
         sounds['pinwheelEmote'] = new Audio(@js(url('/audio/pinwheel_emote.mp3')));
     }" class="font-sans antialiased">
         <x-nav-bar/>
-        <div x-show="!selectedProject" class="bg-amber-100 grid grid-cols-12">
+        <div x-show="!selectedProject" class="grid grid-cols-12 bg-amber-100">
             <div class="col-span-12 lg:col-span-5 bg-gray-200 overflow-hidden bg-cover bg-bottom bg-no-repeat min-h-[740px]" style="background-image: url('{{url('/images/me.jpeg')}}')"></div>
-            <div class="col-span-12 lg:col-span-7 p-12 flex flex-col justify-between space-y-60">
+            <div class="flex flex-col justify-between col-span-12 p-12 lg:col-span-7 space-y-60">
                 <div>
                     <h1 class="text-5xl md:text-[7vw] font-bold text-orange-600">
                         Malik

@@ -10,20 +10,29 @@
     'sound' => null,
     'content' => null
 ])
+<style>
+
+</style>
 <div>
-    <div :class="selectedProject == @js($key) ? '' : 'hover:h-[200px] h-[166px] pt-20' " x-on:mouseover="@if($hoverSound)sounds.{{$hoverSound}}.played.length <= 0 ? sounds.{{$hoverSound}}?.play() : '' @endif" x-on:click="selectedProject = @js($key); @if($sound)sounds.{{$sound}}.played.length <= 0 ? sounds.{{$sound}}?.play() : '' @endif" {{$attributes->merge(['class' => 'text-white group flex justify-between items-center cursor-pointer select-none transition-all duration-500 transform-gpu overflow-hidden relative pb-20'])}} style="{{$attributes->get('style')}}">
-        <div :class="selectedProject == @js($key) ? 'hidden' : 'opacity-100' " class="flex justify-center items-center duration-700">
+    <div :class="selectedProject == @js($key) ? 'pb-12' : 'py-20 hover:h-[200px] h-[166px]' " x-on:mouseover="@if($hoverSound)sounds.{{$hoverSound}}.played.length <= 0 ? sounds.{{$hoverSound}}?.play() : '' @endif" x-on:click="selectedProject = @js($key); @if($sound)sounds.{{$sound}}.played.length <= 0 ? sounds.{{$sound}}?.play() : '' @endif" {{$attributes->merge(['class' => 'text-white group flex justify-between items-center cursor-pointer select-none transition-all duration-500 transform-gpu overflow-hidden relative'])}} style="{{$attributes->get('style')}}">
+        <div :class="selectedProject == @js($key) ? 'hidden' : 'opacity-100' " class="flex items-center justify-center duration-700">
             <div class="-rotate-90 {{$spineLogo->attributes->get('class')}}">
                 {{$spineLogo}}
             </div>
         </div>
-        <div class="uppercase font-bold italic flex flex-col justify-center flex-1 items-center">
-            <div class="size-[20vw] grid place-items-center" x-show="selectedProject == @js($key)" x-transition.enter.delay.300ms>
-                {{$projectMainLogo}}
-            </div>
-            <div class="text-2xl sm:text-4xl md:text-[4.7vw] !leading-none">{{$slot}}</div>
+        <div :class="selectedProject == @js($key) ? 'pt-8' : '' " class="flex flex-col items-center justify-center flex-1 italic font-bold uppercase">
+            @unless(!$projectMainLogo)
+                <div class="w-[16vw] h-[20vw] grid place-items-center" x-show="selectedProject == @js($key)" x-transition.enter.delay.300ms>
+                    {{$projectMainLogo}}
+                </div>
+            @endunless
+            <div :class="selectedProject == @js($key) ? '' : '!w-auto !h-auto md:!text-[4.7vw]' " @class([
+                '!leading-none',
+                'text-2xl sm:text-4xl md:text-[4.7vw]' => $projectMainLogo,
+                'py-20 lg:py-56 text-2xl sm:text-4xl md:text-[10vw]' => !$projectMainLogo,
+            ])>{{$slot}}</div>
         </div>
-        <div :class="selectedProject == @js($key) ? 'opacity-0' : 'opacity-100' " class="hidden md:block duration-300 {{$publisherColor}}">
+        <div :class="selectedProject == @js($key) ? '!hidden' : 'opacity-100' " class="hidden md:block duration-300 {{$publisherColor}}">
             @if($publisher == 'birdboar')
                 <div class="flex items-center justify-center">
                     <div class="h-[62px] w-[86px] flex items-center justify-center pr-10">

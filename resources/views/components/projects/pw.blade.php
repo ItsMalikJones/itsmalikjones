@@ -1,4 +1,4 @@
-<x-bookmark key="PW" class="bg-[#CED6EB] md:bg-[url('/images/pinwheelpattern.svg')] bg-no-repeat bg-contain bg-center" sound="pinwheel" hoverSound="pinwheelEmote" publisher="fcps">
+<x-bookmark key="PW" class="bg-[#CED6EB] md:bg-[url('/images/pinwheel.svg')] bg-no-repeat centered-bg-68" sound="pinwheel" hoverSound="pinwheelEmote" publisher="fcps">
     <x-slot:spineLogo class="ml-7">
         <svg style="width:clamp(70px, 6vw, 6vw);" class="animate-spin-persist" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_80_343" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="46" y="18" width="41" height="42">
@@ -30,21 +30,21 @@
     Pinwheel
     <x-slot:content>
         <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="text-white pl-12 relative flex flex-col pt-16 bg-no-repeat min-h-[869px] bg-commonwealth-navy bg-origin-padding bg-left-bottom lg:bg-bottom bg-[length:150vw] lg:bg-[length:78vw] bg-[url('/images/pinwheelshot.svg')]">
-            <div class="mx-auto max-w-7xl px-4 lg:px-8">
-                <div class="space-y-4 flex flex-col lg:items-center text-left lg:text-center pr-12">
+            <div class="px-4 mx-auto max-w-7xl lg:px-8">
+                <div class="flex flex-col pr-12 space-y-4 text-left lg:items-center lg:text-center">
                     <div class="space-y-5">
                         <h1 class="font-bold italic text-3xl lg:text-[4.9vw] leading-none">Approve & Progress</h1>
-                        <h2 class="font-medium text-2xl lg:text-3xl">Navigating the Landscape of Efficient Workflow Approvals</h2>
+                        <h2 class="text-2xl font-medium lg:text-3xl">Navigating the Landscape of Efficient Workflow Approvals</h2>
                     </div>
-                    <p class="sm:text-lg md:text-xl leading-relaxed max-w-screen-md">
+                    <p class="max-w-screen-md leading-relaxed sm:text-lg md:text-xl">
                         Pinwheel is an innovative Personnel and Budget Request application designed to streamline complex approval processes, enhancing efficiency and decision-making within organizations. It empowers department heads and chiefs with a dual designation system, enabling them to assign roles as either submitters or approvers, thus optimizing workflow and ensuring accountability.
                     </p>
                 </div>
             </div>
             {{-- <div class="grid grid-cols-12 gap-4 place">
-                <div class="col-span-3 relative">
-                    <div class="bg-commonwealth-navy text-white p-3 rounded-lg">
-                        <h1 class="font-bold text-5xl italic">Hello World</h1>
+                <div class="relative col-span-3">
+                    <div class="p-3 text-white rounded-lg bg-commonwealth-navy">
+                        <h1 class="text-5xl italic font-bold">Hello World</h1>
                         <p>
                             Lorem ipsum dolor set amed
                         </p>

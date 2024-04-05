@@ -30,7 +30,7 @@
         </svg>
     </x-slot:spineFlareBottom>
     <x-slot:content>
-        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="pl-12 relative flex flex-col justify-center bg-no-repeat min-h-[869px] bg-right-top bg-[url('/images/bhemain.png')]">
+        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="pl-12 relative flex flex-col justify-center bg-no-repeat min-h-[869px] bg-right-top bg-[length:49vw] bg-[url('/images/bhemain.png')]">
             <div class="space-y-4">
                 <div>
                     <h1 class="font-bold italic text-[6vw] text-bluehorse">Discover & Ride</h1>
@@ -52,7 +52,7 @@
                 x-transition:enter="transition ease-out duration-500 delay-500"
                 x-transition:enter-start="opacity-0 scale-90 translate-x-16"
                 x-transition:enter-end="opacity-100 scale-100"
-                class="absolute -bottom-48 right-0"
+                class="absolute right-0 md:bottom-0 lg:bottom-[16vh] xl:-bottom-[2vh]"
                 loading="lazy"
                 alt="Horse info card"/>
             </div>
