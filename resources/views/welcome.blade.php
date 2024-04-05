@@ -19,7 +19,7 @@
 
         @vite('resources/css/app.css')
     </head>
-    <body x-data="{selectedProject: 'BHE', colors: { bgColor: 'bg-commonwealth-navy', textColor: 'text-white', accentColor: 'aqua'}, sounds: {}}" x-init="() => {
+    <body x-data="{selectedProject: null, colors: { bgColor: 'bg-commonwealth-navy', textColor: 'text-white', accentColor: 'aqua'}, sounds: {}}" x-init="() => {
         sounds['faceid'] = new Audio(@js(url('/audio/face_id_ding.mp3')));
         sounds['pinwheel'] = new Audio(@js(url('/audio/pinwheel.m4a')));
         sounds['pinwheelEmote'] = new Audio(@js(url('/audio/pinwheel_emote.mp3')));
