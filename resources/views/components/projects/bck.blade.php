@@ -7,16 +7,56 @@
     </x-slot:projectMainLogo>
     <div class="text-[#0b49f0]">BlueCheck</div>
     <x-slot:content>
-        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="text-white pl-12 relative flex flex-col pt-16 bg-no-repeat min-h-[869px] bg-commonwealth-navy bg-origin-padding bg-left-bottom lg:bg-bottom bg-[length:150vw] lg:bg-[length:78vw]">
-            <div class="px-4 mx-auto max-w-7xl lg:px-8">
-                <div class="flex flex-col pr-12 space-y-4 text-left lg:items-center lg:text-center">
-                    <div class="space-y-5">
-                        <h1 class="font-bold italic text-3xl lg:text-[4.9vw] leading-none">Unmatched Verification</h1>
-                        <h2 class="text-2xl font-medium lg:text-3xl">Ensuring Compliance Through the Power of Testing</h2>
+        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="relative flex flex-col py-20 pt-16 text-white bg-left-bottom bg-no-repeat bg-commonwealth-navy bg-origin-padding lg:bg-bottom ">
+            <div class="px-4 mx-auto lg:px-8">
+                <div class="flex flex-col space-y-12 text-left lg:items-center lg:text-center">
+                    <div class="space-y-4">
+                        <div class="space-y-5">
+                            <h1 class="font-bold italic text-3xl lg:text-[4.9vw] leading-none">Unmatched Verification</h1>
+                            <h2 class="text-2xl font-medium lg:text-3xl">Ensuring Compliance Through the Power of Testing</h2>
+                        </div>
+                        <p class="max-w-screen-md leading-relaxed lg:mx-auto sm:text-lg md:text-xl">
+                            Worked together with BlueCheck to help them implement a comprehensive test suite that gave them greater confidence in the reliability of their document and identity verification APIs, services, and integrations.
+                        </p>
                     </div>
-                    <p class="max-w-screen-md leading-relaxed sm:text-lg md:text-xl">
-                        Worked together with BlueCheck to help them implement a comprehensive test suite that gave them greater confidence in the reliability of their document and identity verification APIs, services, and integrations.
-                    </p>
+                    <div class="grid w-full h-full grid-cols-12 gap-4 text-left place-items-stretch">
+                        <div class="w-full h-full col-span-12 lg:col-span-4">
+                            <div class="px-5 py-4 space-y-2 bg-white rounded-2xl">
+                                <div class="flex items-center pb-2 gap-x-3">
+                                    <x-icon name="lucide-scan-face" class="text-bluehorse size-6"/>
+                                    <div class="text-xl uppercase font-medium text-[#1d1e25]">Verifying</div>
+                                </div>
+                                <hr class="-mx-5 border-bluehorse"/>
+                                <p class="text-[#7e8492] py-2">
+                                    Implemented tests for BlueCheck's Person Data Search service responsible for verifying user's age via PII. These tests ensure ongoing compliance in the ever-changing landscape of the law across many jurisdictions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full h-full col-span-12 lg:col-span-4">
+                            <div class="h-full px-5 py-4 space-y-2 bg-white rounded-2xl">
+                                <div class="flex items-center pb-2 gap-x-3">
+                                    <x-icon name="lucide-copy-check" class="text-bluehorse size-6"/>
+                                    <div class="text-xl uppercase font-medium text-[#1d1e25]">Processing</div>
+                                </div>
+                                <hr class="-mx-5 border-bluehorse"/>
+                                <p class="text-[#7e8492] py-2">
+                                    Implemented tests for BlueCheck's manual and batch verification process on their Merchant platform.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full h-full col-span-12 lg:col-span-4">
+                            <div class="h-full px-5 py-4 space-y-2 bg-white rounded-2xl">
+                                <div class="flex items-center pb-2 gap-x-3">
+                                    <x-icon name="lucide-blocks" class="text-bluehorse size-6"/>
+                                    <div class="text-xl uppercase font-medium text-[#1d1e25]">Integrating</div>
+                                </div>
+                                <hr class="-mx-5 border-bluehorse"/>
+                                <p class="text-[#7e8492] py-2">
+                                    Implemented tests for BlueCheck's APIs and embeds which enable the full power of their verification services on third-party platforms like Shopify, WooCommerce, BigCommerce and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

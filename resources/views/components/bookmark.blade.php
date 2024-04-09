@@ -68,7 +68,7 @@
             @endif
         </div>
     </div>
-    <div :class="selectedProject == @js($key) ? 'min-h-[869px]' : 'h-0'" class="overflow-hidden transition-all delay-700">
+    <div :class="selectedProject == @js($key) ? '' : 'h-0'" class="overflow-hidden transition-all delay-700">
         {{$content}}
     </div>
 </div>
