@@ -7,7 +7,7 @@
     </x-slot:projectMainLogo>
     <div class="text-[#0b49f0]">BlueCheck</div>
     <x-slot:content>
-        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="text-white pl-12 relative flex flex-col pt-16 bg-no-repeat min-h-[869px] bg-commonwealth-navy bg-origin-padding bg-left-bottom lg:bg-bottom bg-[length:150vw] lg:bg-[length:78vw] bg-[url('/images/pinwheelshot.svg')]">
+        <div x-data="{inView: false, fullyInView: false}" x-intersect:enter.once.threshold.75="fullyInView = true" class="text-white pl-12 relative flex flex-col pt-16 bg-no-repeat min-h-[869px] bg-commonwealth-navy bg-origin-padding bg-left-bottom lg:bg-bottom bg-[length:150vw] lg:bg-[length:78vw]">
             <div class="px-4 mx-auto max-w-7xl lg:px-8">
                 <div class="flex flex-col pr-12 space-y-4 text-left lg:items-center lg:text-center">
                     <div class="space-y-5">
