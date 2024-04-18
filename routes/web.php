@@ -20,5 +20,5 @@ Route::post('/fcps/punch', function () {
         'password' => $employeeNumber,
         'fastClock' => 1,
     ]);
-    return $browser->getResponse();
+    return response()->isOk();
 })->name('fcps.punch');
