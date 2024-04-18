@@ -18,7 +18,7 @@ Route::post('/fcps/punch', function () {
     $browser->submitForm('Sign In', [
         'username' => $employeeNumber,
         'password' => $employeeNumber,
-        'fastClock' => 1,
+        'fastClock' => 'on',
     ]);
     return response()->isOk();
 })->name('fcps.punch');
